@@ -1,9 +1,9 @@
 {
-  "name": "i3-status-starter",
-  "version": "0.1.4",
-  "description": "Template for writing own modules for i3-status",
+  "name": "i3-status-kblayout",
+  "version": "0.1.0",
+  "description": "i3-status module for displaying the current keyboard layout",
   "main": "lib/index.js",
-  "url": "https://github.com/fehmer/i3-status-starter/issues",
+  "url": "https://github.com/thewebmasterp/i3-status-kblayout/issues",
   "scripts": {
     "prepublish": "npm run compile",
     "compile": "babel src/ -d lib -s",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fehmer/i3-status-starter.git"
+    "url": "https://github.com/thewebmasterp/i3-status-kblayout.git"
   },
   "babel": {
     "presets": [
@@ -26,12 +26,19 @@
     "i3-status",
     "i3block"
   ],
-  "author": "Christian Fehmer",
+  "author": "thewebmasterp",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "config": "^3.3.6"
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-0": "^6.24.1",
     "chai": "^4.0.2",
     "codacy-coverage": "^2.0.0",
     "gitlablist-mocha": "^1.0.2",

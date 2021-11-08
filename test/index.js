@@ -6,35 +6,35 @@ import Starter from './../lib/index';
 
 describe('Module Starter', () => {
 
-    describe('#constructor', () => {
-        it('should construct and store custom options', () => {
-            var block = new Starter({
-                text: 'Peter',
-                secretValue: 'nonEncryptedSecret'
-            });
+    // describe('#constructor', () => {
+    //     it('should construct and store custom options', () => {
+    //         var block = new Starter({
+    //             text: 'Peter',
+    //             secretValue: 'nonEncryptedSecret'
+    //         });
 
-            expect(block.text).to.equal('Peter');
-            expect(block.secretValue).to.equal('nonEncryptedSecret');
-        });
-    });
+    //         expect(block.text).to.equal('Peter');
+    //         expect(block.secretValue).to.equal('nonEncryptedSecret');
+    //     });
+    // });
 
 
-    describe('update', () => {
-        it('should update the output and fire updated', (done) => {
-            //construct block
-            var block = new Starter({
-                text: 'Peter'
-            });
+    // describe('update', () => {
+    //     it('should update the output and fire updated', (done) => {
+    //         //construct block
+    //         var block = new Starter({
+    //             text: 'Peter'
+    //         });
 
-            execute(block, (output) => {
-                //check output line
-                expect(output.short_text).to.equal('Peter');
-                expect(output.full_text).to.equal('Peter');
+    //         execute(block, (output) => {
+    //             //check output line
+    //             expect(output.short_text).to.equal('Peter');
+    //             expect(output.full_text).to.equal('Peter');
 
-                done();
-            });
-        });
-    });
+    //             done();
+    //         });
+    //     });
+    // });
 
 })
 
