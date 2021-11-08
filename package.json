@@ -21,9 +21,16 @@
     ]
   },
   "keywords": [
+    "keyboard",
+    "i3bar",
+    "layout",
     "i3",
+    "i3status",
     "i3wm",
     "i3-status",
+    "i3-status-module",
+    "i3-status-starter",
+    "keyboardlayout",
     "i3block"
   ],
   "author": "thewebmasterp",
