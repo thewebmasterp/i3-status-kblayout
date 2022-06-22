@@ -1,6 +1,6 @@
 # i3-status-kblayout 
 
-[i3-status](https://github.com/fehmer/i3-status) module for showing the battery status of your laptop.
+[i3-status](https://github.com/fehmer/i3-status) module for showing the keyboard layout of your desktop.
 
 ## Installation
 
@@ -14,7 +14,7 @@ npm install i3-status-kblayout
 
 The module has to be configured in dependence of your current setup.
 
- I run Arch Linux, so to make xorg toggle between Bulgarian (bg) and english (en)
+ I run Arch Linux, so to make xorg toggle between Bulgarian (bg) and English (en)
 keyboard layouts, I had to add this to ``/etc/X11/xorg.conf``
 ```
 Section "InputClass"
@@ -37,7 +37,7 @@ xset -q | grep LED | awk '{ print $10 }'
 ```
  In order for this module to recognize and display the current layout on you i3-status, it runs the
 same command but all it gets is just the binary number.
- And you're the one that has to tell it what this binary number translates to!
+ And you're the one that has to map this binary number to a string that will be shown in your i3-status!
 
 To do this, let me walk you through the following example configuration.
 ### Example
@@ -53,7 +53,7 @@ To do this, let me walk you through the following example configuration.
     }
 }
 ```
-
+Note: This configuration file is part of the npm package itself. You should probably first fork it to make those changes to it, unless you want your config deleted on your next update.
 
 Let's suppose you want to toggle between bulgarian and english. First set your layout to english and run: 
 
@@ -70,8 +70,7 @@ That's why, in ``default.json`` I set ``"00000001": "EN 🟢"``
 
 Go and repeat that process for every other layout that you need.
 
-I recommend putting a 🟢 for the layouts that are with caps-lock enabled but the control is in your hands.
-
+I recommend putting a 🟢 for the layouts that are with caps-lock enabled but the control is in your hands, put a 🎃 if you wish.
 
 ## Basic usage:
 ```yml
@@ -79,3 +78,6 @@ blocks:
   - name: kblayout
     module: i3-status-kblayout
 ```
+
+## Problems
+After a while of using this in my setup, I encountered the following issue. Sometimes this binary number changes (I guess it depends from the way you set your keyboard layout) to a one you haven't mapped. If this happens to you, just follow the already described steps of mapping a binary number to a string in the configuration file.
