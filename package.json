@@ -1,6 +1,6 @@
 {
   "name": "i3-status-kblayout",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "i3-status module for displaying the current keyboard layout",
   "main": "lib/index.js",
   "url": "https://github.com/thewebmasterp/i3-status-kblayout/issues",
