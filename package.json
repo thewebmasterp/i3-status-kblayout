@@ -1,6 +1,6 @@
 {
   "name": "i3-status-kblayout",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "i3-status module for displaying the current keyboard layout",
   "main": "lib/index.js",
   "url": "https://github.com/thewebmasterp/i3-status-kblayout/issues",
@@ -40,16 +40,16 @@
 	},
   "devDependencies": {
 		"babel-cli": "^6.18.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.2.3",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
     "babel-preset-latest": "^6.16.0",
-    "babel-preset-stage-0": "^6.24.1",
     "chai": "^4.0.2",
     "codacy-coverage": "^2.0.0",
     "gitlablist-mocha": "^1.0.2",
     "istanbul": "^1.1.0-alpha.1",
     "mocha": "^3.2.0"
-  }
+  },
+	"homepage": "https://github.com/thewebmasterp/i3-status-kblayout#readme",
+	"directories": {
+		"lib": "lib",
+		"test": "test"
+	}
 }
